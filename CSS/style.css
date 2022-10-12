@@ -15,33 +15,39 @@ html {
 body {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
-    background-color: black;
 }
+
 ul {
     list-style: none;
 }
+
 .container {
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
+
 @media (min-width: 1200px) {
     .container {
         width: 1170px;
     }
 }
 
+/* part one  */
+
 .landing {
     background-image: url(../IMG/land.jpg);
     background-size: cover;
     height: 100vh;
 }
+
 .brightness {
     width: 100%;
     height: 100%;
     background-color: rgb(0 0 0 / 60%);
 }
+
 header .container {
     display: flex;
     justify-content: space-between;
@@ -49,6 +55,7 @@ header .container {
     min-height: 97px;
     position: relative;
 }
+
 header .container::after {
     content: '';
     position: absolute;
@@ -57,17 +64,21 @@ header .container::after {
     bottom: 0px;
     background-color: rgb(162, 162, 162);
 }
+
 header img {
     height: 40px;
 }
+
 header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .menu {
     display: none;
 }
+
 a {
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -78,14 +89,17 @@ a {
     position: relative;
     z-index: 5;
 }
+
 header nav a.active,
 header nav a:hover {
     color: var(--color);
     border-bottom: 1px solid var(--color);
 }
+
 ul {
     display: flex;
 }
+
 header nav .search {
     width: 40px;
     height: 30px;
@@ -93,6 +107,7 @@ header nav .search {
     margin-left: 30px;
     border-left: 1px solid white;
 }
+
 .srch {
     color: white;
     font-size: 20px;
@@ -101,6 +116,7 @@ header nav .search {
     transform: translateY(-50%);
     right: 0;
 }
+
 .hello {
     position: absolute;
     left: 0;
@@ -113,19 +129,23 @@ header nav .search {
     display: flex;
     justify-content: flex-end;
 }
+
 .landing .content {
     max-width: 500px;
 }
+
 .landing .hello h2 {
     font-size: 32px;
     font-weight: normal;
     line-height: 1.5;
     margin-bottom: 20px;
 }
+
 .landing .hello p {
     font-size: 14px;
     line-height: 2;
 }
+
 .next-previous {
     position: absolute;
     left: 0;
@@ -139,6 +159,7 @@ header nav .search {
     justify-content: space-between;
     font-size: 16px;
 }
+
 .circles {
     position: absolute;
     left: 50%;
@@ -151,6 +172,7 @@ header nav .search {
     display: flex;
     justify-content: space-between;
 }
+
 .circles div {
     background-color: #ff000000;
     height: 20px;
@@ -158,10 +180,12 @@ header nav .search {
     border-radius: 50%;
     border: 1px solid white;
 }
+
 .circles .active {
     background-color: var(--color);
     border-color: transparent;
 }
+
 @media (max-width: 767.98px) {
     .menu {
         display: block;
@@ -186,3 +210,115 @@ header nav .search {
         display: none;
     }
 }
+
+/* part two */
+
+.header {
+    text-align: center;
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+}
+
+.header h1 {
+    font-size: 40px;
+    margin-top: 35px;
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 70px;
+    padding-top: 65px;
+}
+
+.header h1::before {
+    content: '';
+    bottom: -35px;
+    width: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    background-color: black;
+    position: absolute;
+}
+
+.header h1::after {
+    content: '';
+    bottom: -42px;
+    width: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 14px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.header p {
+    color: rgb(119 119 119);
+    line-height: 2;
+}
+
+.services .srv {
+    display: flex;
+}
+
+.services .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(400px , 1fr));
+    padding-bottom: 50px;
+    gap: 60px 40px;
+}
+
+.services h3 {
+    margin-bottom: 30px;
+    color: var(--color);
+}
+
+.services p {
+    line-height: 2;
+    color: rgb(119 119 119);
+}
+.services .text {
+    margin-left: 50px;
+}
+
+@media (max-width: 575.98px) {
+    .services .srv {
+        text-align: center;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .services .container {
+        display: block;
+
+    }
+    .services .text {
+        margin-left: auto;
+    }
+    .srv-ico{
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
