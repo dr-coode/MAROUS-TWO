@@ -1,10 +1,13 @@
 html {
     scroll-behavior: smooth;
 }
+
 :root {
     --color: rgb(25, 200, 250);
+    --sec-color:rgb(15 116 143 / 70%);
     --font-weight: 700;
 }
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -12,6 +15,7 @@ html {
     padding: 0;
     margin: 0;
 }
+
 body {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
@@ -96,7 +100,7 @@ header nav a:hover {
     border-bottom: 1px solid var(--color);
 }
 
-ul {
+nav ul {
     display: flex;
 }
 
@@ -124,7 +128,7 @@ header nav .search {
     transform: translateY(-50%);
     width: 50%;
     padding: 50px;
-    background-color: rgb(15 116 143 / 70%);
+    background-color: var(--sec-color);
     color: white;
     display: flex;
     justify-content: flex-end;
@@ -193,7 +197,7 @@ header nav .search {
         color: white;
     }
 
-    ul {
+    nav ul {
         display: none;
     }
 
@@ -263,8 +267,8 @@ header nav .search {
 
 .services .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill , minmax(400px , 1fr));
-    padding-bottom: 50px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    padding-bottom: 100px;
     gap: 60px 40px;
 }
 
@@ -277,8 +281,57 @@ header nav .search {
     line-height: 2;
     color: rgb(119 119 119);
 }
+
 .services .text {
     margin-left: 50px;
+}
+
+
+.features {
+    background-image: url(../IMG/srv.jpg);
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.features .cont {
+    background-color: var(--sec-color);
+    position: absolute;
+    width: 54%;
+    height: 60%;
+    top: 20%;
+    right: 0px;
+}
+
+.features .cont  .text {
+    padding: 50px;
+}
+
+.features .text li {
+    padding: 20px 0px;
+    color: white;
+    list-style: decimal-leading-zero;
+}
+
+.features .text h2 {
+    margin: 0px -30px 30px;
+    color: white;
+    font-weight: 400;
+}
+.features img {
+    position: absolute;
+    top: 200px;
+    left: 10px;
+}
+
+@media (max-width: 767.98px) {
+    .features img {
+        display:none;
+    }
+    .features .cont {
+        width: 100%;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -287,38 +340,18 @@ header nav .search {
         flex-direction: column;
         margin-bottom: 40px;
     }
+    
     .services .container {
         display: block;
-
     }
+    
     .services .text {
         margin-left: auto;
     }
-    .srv-ico{
+    
+    .srv-ico {
         margin-bottom: 20px;
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* part three */
