@@ -490,3 +490,255 @@ header nav .search {
         flex-basis: 100%;
     }
 }
+
+
+
+/* part four */
+
+
+
+.about .img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -115px;
+}
+
+.about .stats {
+    background-image: url(../IMG/stats.png);
+    position: relative;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+
+.about .stats::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.700);
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.about .stats .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(284px, 1fr));
+    color: white;
+    text-align: center;
+    gap: 1px;
+    position: relative;
+    z-index: 10;
+}
+
+.about .stats .box {
+    background-color: var(--sec-color);
+    padding: 50px;
+}
+
+.about .stats .box i {
+    font-size: 16px;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding-top: 10px;
+}
+
+.about .stats .box h2 {
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+.about .stats .box i,
+.about .stats .box h2 {
+    margin-bottom: 30px;
+}
+
+.skill-section .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(423px, 1fr));
+    gap: 100px;
+}
+
+.skill-section .container h2 {
+    text-align: center;
+    font-size: 19px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.skill-section .container .col-1>p,
+.skill-section .container .col-2>p {
+    text-align: center;
+    margin-bottom: 60px;
+    color: rgb(119, 119, 119);
+    line-height: 2;
+}
+
+.skill-section .container .col-1 {
+    position: relative;
+    padding-bottom: 55px;
+}
+
+.skill-section .guy-1,
+.skill-section .guy-2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.skill-section .col-1 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+.skill-section .col-1 h5 {
+    text-align: end;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: rgb(119 119 119);
+}
+
+.skill-section .guy-1 p,
+.skill-section .guy-2 p {
+    font-size: 16px;
+    position: relative;
+
+}
+
+.skill-section .guy-1 p::after,
+.skill-section .guy-2 p::after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(204, 204, 204);
+}
+
+.skill-section .container .col-1 .circles {
+    width: 65px;
+    height: 14px;
+}
+
+.skill-section .container .col-1 .circles div {
+    height: 14px;
+    width: 14px;
+    border: 1px solid rgb(171, 171, 171);
+}
+
+.skill-section .container .col-1 .circles .active {
+    border-color: transparent;
+
+}
+
+.technology>div {
+    margin-bottom: 40px;
+}
+
+.skill-section .col-2 .technology h4 {
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.skill-section .col-2 .mt {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(222, 218, 220);
+    position: relative;
+}
+
+.technology .one::after,
+.technology .four::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 90%;
+    background-color: var(--color);
+}
+
+.skill-section .col-2 .two::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 85%;
+    background-color: var(--color);
+}
+
+.skill-section .col-2 .three::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 80%;
+    background-color: var(--color);
+}
+
+.qoute {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url("../IMG/quote.jpg");
+    background-size: cover;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+    width: 100%;
+}
+
+.qoute h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.qoute h5 {
+    font-weight: 400;
+}
+
+
+@media (max-width: 767.98px) {
+    .about .img {
+        margin-bottom: -56px;
+        padding-right: 15px;
+    }
+
+    .about .img img {
+        max-width: 100%;
+    }
+
+    .skill-section .guy-1,
+    .skill-section .guy-2 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .skill-section .col-1 img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .skill-section .container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+
+/* part five */
