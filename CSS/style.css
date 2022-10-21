@@ -502,7 +502,6 @@ header nav .search {
     justify-content: center;
     margin-bottom: -115px;
 }
-
 .about .stats {
     background-image: url(../IMG/stats.png);
     position: relative;
@@ -511,7 +510,6 @@ header nav .search {
     padding-bottom: 100px;
     margin-bottom: 100px;
 }
-
 .about .stats::before {
     content: "";
     position: absolute;
@@ -522,7 +520,6 @@ header nav .search {
     width: 100%;
     height: 100%;
 }
-
 .about .stats .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(284px, 1fr));
@@ -532,12 +529,10 @@ header nav .search {
     position: relative;
     z-index: 10;
 }
-
 .about .stats .box {
     background-color: var(--sec-color);
     padding: 50px;
 }
-
 .about .stats .box i {
     font-size: 16px;
     background-color: black;
@@ -546,24 +541,20 @@ header nav .search {
     border-radius: 50%;
     padding-top: 10px;
 }
-
 .about .stats .box h2 {
     font-size: 50px;
     font-weight: bold;
 
 }
-
 .about .stats .box i,
 .about .stats .box h2 {
     margin-bottom: 30px;
 }
-
 .skill-section .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(423px, 1fr));
     gap: 100px;
 }
-
 .skill-section .container h2 {
     text-align: center;
     font-size: 19px;
@@ -571,7 +562,6 @@ header nav .search {
     text-transform: uppercase;
     margin-bottom: 30px;
 }
-
 .skill-section .container .col-1>p,
 .skill-section .container .col-2>p {
     text-align: center;
@@ -579,12 +569,10 @@ header nav .search {
     color: rgb(119, 119, 119);
     line-height: 2;
 }
-
 .skill-section .container .col-1 {
     position: relative;
     padding-bottom: 55px;
 }
-
 .skill-section .guy-1,
 .skill-section .guy-2 {
     display: flex;
@@ -593,14 +581,12 @@ header nav .search {
     line-height: 1.8;
     font-size: 15px;
 }
-
 .skill-section .col-1 img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     margin-right: 50px;
 }
-
 .skill-section .col-1 h5 {
     text-align: end;
     font-weight: 400;
@@ -608,14 +594,12 @@ header nav .search {
     font-size: 14px;
     color: rgb(119 119 119);
 }
-
 .skill-section .guy-1 p,
 .skill-section .guy-2 p {
     font-size: 16px;
     position: relative;
 
 }
-
 .skill-section .guy-1 p::after,
 .skill-section .guy-2 p::after {
     content: "";
@@ -626,39 +610,32 @@ header nav .search {
     height: 1px;
     background-color: rgb(204, 204, 204);
 }
-
 .skill-section .container .col-1 .circles {
     width: 65px;
     height: 14px;
 }
-
 .skill-section .container .col-1 .circles div {
     height: 14px;
     width: 14px;
     border: 1px solid rgb(171, 171, 171);
 }
-
 .skill-section .container .col-1 .circles .active {
     border-color: transparent;
 
 }
-
 .technology>div {
     margin-bottom: 40px;
 }
-
 .skill-section .col-2 .technology h4 {
     font-weight: 400;
     margin-bottom: 15px;
 }
-
 .skill-section .col-2 .mt {
     width: 100%;
     height: 30px;
     background-color: rgb(222, 218, 220);
     position: relative;
 }
-
 .technology .one::after,
 .technology .four::after {
     content: "";
@@ -669,7 +646,6 @@ header nav .search {
     width: 90%;
     background-color: var(--color);
 }
-
 .skill-section .col-2 .two::after {
     content: "";
     position: absolute;
@@ -679,7 +655,6 @@ header nav .search {
     width: 85%;
     background-color: var(--color);
 }
-
 .skill-section .col-2 .three::after {
     content: "";
     position: absolute;
@@ -689,7 +664,6 @@ header nav .search {
     width: 80%;
     background-color: var(--color);
 }
-
 .qoute {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -700,27 +674,21 @@ header nav .search {
     margin-top: 100px;
     width: 100%;
 }
-
 .qoute h1 {
     font-size: 30px;
     margin-bottom: 20px;
 }
-
 .qoute h5 {
     font-weight: 400;
 }
-
-
 @media (max-width: 767.98px) {
+    .about .img img {
+            max-width: 100%;
+    }
     .about .img {
         margin-bottom: -56px;
         padding-right: 15px;
     }
-
-    .about .img img {
-        max-width: 100%;
-    }
-
     .skill-section .guy-1,
     .skill-section .guy-2 {
         display: flex;
@@ -729,16 +697,267 @@ header nav .search {
         text-align: center;
         flex-direction: column;
     }
-
     .skill-section .col-1 img {
         margin-right: 0;
         margin-bottom: 15px;
     }
-
     .skill-section .container {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
 }
 
 
+
+
 /* part five */
+
+
+.pricing > .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(255px,1fr));
+    text-align: center;
+    text-transform: capitalize;
+    gap: 30px;
+}
+.pricing .container .pack {
+    padding: 40px 40px 0;
+    border-top:1px solid var(--color) ;
+    background-color:rgb(252, 252, 252) ;
+    padding-right: 0;
+    padding-left: 0;
+}
+.pricing .container .p1 {
+    position: relative;
+    padding-bottom: 40px;
+
+    border-bottom:1px solid var(--color) ;
+}
+.pricing .container .p1 h2 {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.pricing .container .p1 p {
+    font-size: 60px;
+    display: inline;
+    font-weight: 700;
+}
+.pack .p1 .d {
+    position: absolute;
+    top: 36px;
+    left: 65px;
+    font-size: 26px;
+}
+.pricing .container .p1 .m{
+    font-weight: 700;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.pricing .container .p2 h3  {
+    padding: 20px 0px;
+    margin: 0 61px;
+    font-size: 16px;
+    font-weight: 400;
+    border-bottom: 1px solid var(--color);
+}
+.pricing .container .p3 h2  {
+    padding: 20px;
+    border: 1px solid var(--color);
+    font-size: 16px;
+    font-weight: 400;
+}
+.pricing .container .p3 {
+    padding: 30px 77px;
+    margin-top: -1px;
+    border-top: 1px solid var(--color);
+}
+.pricing > p{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+}
+.pricing > h3 {
+    text-align: center;
+    width: fit-content;
+    margin: 30px auto 100px;
+    padding: 15px;
+    border-radius: 12px;
+}
+.pricing  .subscribe {
+    width: 100%;
+    background-image: url(../IMG/subscribe.jpg);
+    color: white;
+    background-size: cover;
+}
+.pricing .subscribe form {
+    position: relative;
+}
+.subscribe .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.pricing .subscribe i {
+    font-size: 16px;
+    position: absolute;
+    top: 35%;
+    left: 25px;
+    outline: none;
+} 
+.pricing .subscribe input[type="email"] {
+    background-color: transparent;
+    height: 58px;
+    width: 300px;
+    margin-right: -6px;
+    padding-left: 60px;
+    border: 1px solid rgb(117 111 111);
+    outline: none;
+    border-radius: 15px 0px 0px 15px;
+    color: white;
+}
+.pricing .subscribe input[type="submit"] {
+    padding: 20px;
+    background-color: var(--color);
+    border-radius: 0px 15px 15px 0px;
+    font-weight: 600;
+    color: black;
+    border: none;
+}
+.pricing  .subscribe p {
+    max-width: 500px;
+    font-size: 19px;
+    line-height: 1.5;
+}
+@media (max-width: 575.98px) {
+    .pricing .subscribe input[type="email"] {
+        width: 230px;
+    }
+}
+@media (max-width: 767.98px) {
+    .pricing .container {
+        grid-template-columns: repeat(auto-fill, minmax(255px, 280px));
+        justify-content: center;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .subscribe .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .pricing  .subscribe p {
+        margin-top:30px ;
+        text-align: center;
+    }
+}
+
+
+
+/* part six */
+
+
+.contact .container{
+    display: flex;
+}
+.contact .container form{
+    display: flex;
+    flex-direction: column;
+    outline: none;
+    min-width: 700px;
+}
+.contact .container form [type="text"] , form [type="email"] ,form textarea {
+    padding: 20px;
+    border: 1px solid rgb(204, 204, 204);
+    margin-bottom: 30px;
+    border-radius: 10px;
+    outline: none;
+}
+.contact .container form textarea{
+    min-height:180px ;
+}
+.contact .container form [type="submit"] {
+    padding: 20px;
+    width: fit-content;
+    align-self: flex-end;
+    color: white;
+    background: var(--color);
+    border: none;
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+.contact .container .info p , .info address{
+    color: rgb(119, 119, 119);
+}
+.contact .container .info div{
+    margin-left: 60px;
+}
+.contact .container .info div:first-child{
+    margin-bottom: 90px;
+}
+.contact .container .info h4{
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.contact .container .info p{
+    margin-bottom: 10px;
+}
+@media (max-width: 991.98px) {
+    .contact .container form{
+        min-width: 500px;
+    }
+}
+@media (max-width: 767.98px) {
+    .contact .container{
+        flex-direction: column-reverse;
+    }
+    .contact .container form{
+        min-width: 300px;
+    }
+    .contact .container .info div:first-child{
+        margin-bottom: 30px;
+    }
+    .contact .container .info div{
+        margin: auto;
+    }
+    .contact .container .info{
+        margin: auto auto 30px;
+    }
+}
+
+
+
+/* part seven */
+
+
+
+footer{
+    background-image: url(../IMG/subscribe.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 380px;
+    margin-top: 100px;
+}
+footer img{
+    width: 124px;
+    text-transform: uppercase;
+}
+footer h2{
+    padding: 20px;
+    font-size:22px;
+    font-weight: 400;
+}
+footer i{
+    font-size:22px ;
+    padding: 20px 15px;
+}
+footer span{
+    color: var(--color);
+}
+
