@@ -42,7 +42,7 @@ ul {
 /* part one  */
 
 .landing {
-    background-image: url(../IMG/land.jpg);
+    background-image: url(../img/land.jpg);
     background-size: cover;
     height: 100vh;
 }
@@ -291,7 +291,7 @@ header nav .search {
 
 
 .features {
-    background-image: url(../IMG/srv.jpg);
+    background-image: url(../img/srv.jpg);
     background-size: cover;
     height: 600px;
     position: relative;
@@ -444,7 +444,7 @@ header nav .search {
 }
 
 .video video {
-    background-image: url(../IMG/awesome-video.mp4);
+    background-image: url(../img/awesome-video.mp4);
     width: 100%;
 }
 
@@ -503,7 +503,7 @@ header nav .search {
     margin-bottom: -115px;
 }
 .about .stats {
-    background-image: url(../IMG/stats.png);
+    background-image: url(../img/stats.png);
     position: relative;
     background-size: cover;
     padding-top: 100px;
@@ -667,7 +667,7 @@ header nav .search {
 .qoute {
     padding-top: 100px;
     padding-bottom: 100px;
-    background-image: url("../IMG/quote.jpg");
+    background-image: url("../img/quote.jpg");
     background-size: cover;
     text-align: center;
     color: white;
@@ -786,7 +786,7 @@ header nav .search {
 }
 .pricing  .subscribe {
     width: 100%;
-    background-image: url(../IMG/subscribe.jpg);
+    background-image: url(../img/subscribe.jpg);
     color: white;
     background-size: cover;
 }
@@ -934,7 +934,7 @@ header nav .search {
 
 
 footer{
-    background-image: url(../IMG/subscribe.jpg);
+    background-image: url(../img/subscribe.jpg);
     background-size: cover;
     display: flex;
     flex-direction: column;
