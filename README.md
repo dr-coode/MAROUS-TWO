@@ -1,2 +1,2 @@
-# this repo will be upadated 
-## next step is adding JS
+# DEMO : https://marouz.github.io/MAROUS-ONE/
+## this repo will be upadated & added JS
